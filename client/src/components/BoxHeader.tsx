@@ -24,11 +24,7 @@ const BoxHeader = ({ icon, title, subtitle, otherText }: Props) => {
           </Typography>
         </Box>
       </FlexBox>
-      <Typography
-        variant='h5'
-        fontWeight={'700'}
-        color={palette.secondary[300]}
-      >
+      <Typography variant='h5' fontWeight={'700'} color={palette.tertiary[500]}>
         {otherText}
       </Typography>
     </FlexBox>
