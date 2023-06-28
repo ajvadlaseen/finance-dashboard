@@ -6,6 +6,8 @@ import cors from 'cors'
 import helmet from 'helmet'
 import dotenv from 'dotenv'
 import kpiRoutes from './routes/kpi.js'
+import productRoutes from './routes/product.js'
+import transactionRoutes from './routes/transaction.js'
 
 // Config
 dotenv.config()
@@ -19,6 +21,8 @@ app.use(morgan('combined'))
 app.use(cors())
 
 app.use('/kpi', kpiRoutes)
+app.use('/product', productRoutes)
+app.use('/transaction', transactionRoutes)
 
 // Mongoose Config
 
