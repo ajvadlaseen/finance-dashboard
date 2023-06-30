@@ -18,7 +18,7 @@ export interface Month {
   revenue: number
   expenses: number
   operationalExpenses: number
-  nonOperattionalExpenses: number
+  nonOperationalExpenses: number
   _id: string
   id: string
 }
@@ -34,4 +34,26 @@ export interface ExpensesByCategory {
   salaries: number
   supplies: number
   services: number
+}
+
+export interface GetProductsResponse {
+  id: string
+  _id: string
+  price: number
+  expense: number
+  transactions: Array<string>
+  __v: number
+  createdAt: string
+  updatedAt: string
+}
+
+export interface GetTransactionsResponse {
+  id: string
+  _id: string
+  buyer: string
+  amount: number
+  products: Array<string>
+  __v: number
+  createdAt: string
+  updatedAt: string
 }

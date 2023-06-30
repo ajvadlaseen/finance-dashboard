@@ -22,7 +22,7 @@ const monthSchema = new Schema(
       currency: 'INR',
       get: (c) => c / 100,
     },
-    nonOperattionalExpenses: {
+    nonOperationalExpenses: {
       type: mongoose.Types.Currency,
       currency: 'INR',
       get: (c) => c / 100,

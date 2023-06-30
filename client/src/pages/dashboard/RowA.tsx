@@ -136,9 +136,10 @@ const RowA = () => {
               tickLine={false}
               style={{ fontSize: '10px' }}
               axisLine={{ strokeWidth: '0' }}
+              tickFormatter={(c) => `₹${c}`}
               // domain={[50000, 2500000]}
             />
-            <Tooltip />
+            <Tooltip formatter={(c) => `₹${c}`} />
             <Area
               type='monotone'
               dataKey='revenue'
@@ -180,6 +181,7 @@ const RowA = () => {
               tickLine={false}
               style={{ fontSize: '10px' }}
               axisLine={false}
+              tickFormatter={(c) => `₹${c}`}
               // domain={[50000, 2500000]}
             />
             <YAxis
@@ -188,9 +190,10 @@ const RowA = () => {
               tickLine={false}
               style={{ fontSize: '10px' }}
               axisLine={false}
+              tickFormatter={(c) => `₹${c}`}
               // domain={[50000, 2500000]}
             />
-            <Tooltip />
+            <Tooltip formatter={(c) => `₹${c}`} />
             <Legend height={20} wrapperStyle={{ margin: '5px 0 5px 0' }} />
             <Line
               yAxisId={'left'}
@@ -246,8 +249,9 @@ const RowA = () => {
               axisLine={false}
               tickLine={false}
               style={{ fontSize: '10px' }}
+              tickFormatter={(c) => `₹${c}`}
             />
-            <Tooltip />
+            <Tooltip formatter={(c) => `₹${c}`} />
             <Bar dataKey='revenue' fill='url(#colorRevenue2)' />
           </BarChart>
         </ResponsiveContainer>

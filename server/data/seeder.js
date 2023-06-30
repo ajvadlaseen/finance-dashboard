@@ -17,7 +17,7 @@ mongoose
   .then(async () => {
     // await mongoose.connection.db.dropDatabase()
     console.log('Database Connected')
-    await Transaction.insertMany(transactions)
+    await KPI.insertMany(kpis)
     console.log('Data Imported')
     process.exit(0)
   })
