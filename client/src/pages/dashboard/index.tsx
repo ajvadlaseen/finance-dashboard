@@ -10,10 +10,10 @@ const gridTemplateLargeScreen = `
   "a b f"
   "d e f"
   "d e f"
-  "d g h"
-  "i g h"
-  "i g j"
-  "i g j"
+  "d h i"
+  "g h i"
+  "g h i"
+  "g h i"
 
 `
 const gridTemplateSmallScreen = `
@@ -36,16 +36,15 @@ const gridTemplateSmallScreen = `
   "f"
   "f"
   "f"
-  "i"
-  "i"
-  "i"
   "g"
   "g"
   "g"
   "h"
   "h"
-  "j"
-  "j"
+  "h"
+  "h"
+  "i"
+  "i"
 `
 
 const Dashboard = () => {

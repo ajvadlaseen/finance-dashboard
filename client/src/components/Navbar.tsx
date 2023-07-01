@@ -9,7 +9,7 @@ const Navbar = () => {
       <FlexBox gap={'0.75rem'}>
         <DeblurIcon sx={{ fontSize: '3rem' }} />
         <Typography variant='h4' fontSize={'2rem'}>
-          FinDash
+          FinSense
         </Typography>
       </FlexBox>
     </FlexBox>

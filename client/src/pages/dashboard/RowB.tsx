@@ -27,7 +27,7 @@ type Props = object
 
 const RowB = () => {
   const { palette } = useTheme()
-  const pieColors = [palette.grey[100], palette.grey[600]]
+  const pieColors = [palette.primary[600], palette.grey[600]]
 
   const { data: productData } = useGetProductsQuery()
   const { data: operationalData } = useGetKpisQuery()
@@ -85,7 +85,7 @@ const RowB = () => {
     ]
   }, [operationalData])
 
-  console.log('TCL: ', totalExpenses)
+  // console.log('TCL: ', totalExpenses)
   return (
     <>
       <DashboardBox gridArea='d' padding={'5px 5px'}>
@@ -210,7 +210,7 @@ const RowB = () => {
               style={{ fontSize: '10px' }}
               tickFormatter={(c) => `₹${c}`}
             />
-            <ZAxis type='number' range={[20]}></ZAxis>
+            <ZAxis type='number' range={[20]} />
             <Tooltip formatter={(c) => `₹${c}`} />
             <Scatter
               name='Product Expense Ratio'
