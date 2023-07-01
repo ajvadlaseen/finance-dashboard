@@ -11,11 +11,9 @@ import { DataGrid, GridCellParams } from '@mui/x-data-grid'
 import { useMemo } from 'react'
 import { Cell, Pie, PieChart } from 'recharts'
 
-type Props = object
-
-const RowC = (props: Props) => {
+const RowC = () => {
   const isLargeScreen = useMediaQuery('(min-width: 1200px)')
-  const { palette, breakpoints } = useTheme()
+  const { palette } = useTheme()
 
   const pieColors = [palette.primary[500], palette.primary[900]]
 
@@ -174,7 +172,7 @@ const RowC = (props: Props) => {
                   outerRadius={35}
                   paddingAngle={2}
                 >
-                  {data.map((entry, index) => (
+                  {data.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={pieColors[index]} />
                   ))}
                 </Pie>

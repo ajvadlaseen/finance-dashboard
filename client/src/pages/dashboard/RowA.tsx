@@ -18,8 +18,6 @@ import {
   YAxis,
 } from 'recharts'
 
-type Props = object
-
 const RowA = () => {
   const { palette } = useTheme()
   const { data } = useGetKpisQuery()

@@ -1,19 +1,16 @@
 import BoxHeader from '@/components/BoxHeader'
 import DashboardBox from '@/components/DashboardBox'
-import FlexBox from '@/components/FlexBox'
 import { useGetKpisQuery, useGetProductsQuery } from '@/state/api'
-import { Box, Typography, useTheme } from '@mui/material'
+import { useTheme } from '@mui/material'
 import { useMemo } from 'react'
 import {
   CartesianGrid,
   Cell,
-  Label,
   Legend,
   Line,
   LineChart,
   Pie,
   PieChart,
-  PieLabelRenderProps,
   ResponsiveContainer,
   Scatter,
   ScatterChart,
@@ -22,8 +19,6 @@ import {
   YAxis,
   ZAxis,
 } from 'recharts'
-
-type Props = object
 
 const RowB = () => {
   const { palette } = useTheme()
@@ -170,7 +165,7 @@ const RowB = () => {
             // paddingAngle={2}
             // dataKey='value'
           >
-            {totalExpenses.map((entry, index) => (
+            {totalExpenses.map((_, index) => (
               <Cell key={`cell-${index}`} fill={pieColors[index]} />
             ))}
           </Pie>
