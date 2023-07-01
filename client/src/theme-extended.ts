@@ -8,4 +8,8 @@ declare module '@mui/material/styles/createPalette' {
   interface Palette {
     tertiary: PaletteColor
   }
+
+  interface TypeBackground {
+    light: string
+  }
 }
