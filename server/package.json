@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,7 @@
     "express": "^4.18.2",
     "helmet": "^7.0.0",
     "mongoose": "^7.3.1",
-    "mongoose-currency": "^0.2.0",
+    "mongoose-currency": "0.2.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

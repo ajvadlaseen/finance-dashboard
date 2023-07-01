@@ -24,6 +24,9 @@ app.use('/kpi', kpiRoutes)
 app.use('/product', productRoutes)
 app.use('/transaction', transactionRoutes)
 
+app.get('/', (req, res) => {
+  res.send('API Running')
+})
 // Mongoose Config
 
 const PORT = process.env.PORT || 4000
@@ -38,3 +41,5 @@ mongoose
     app.listen(PORT, () => console.log('Server started on', PORT))
   })
   .catch((error) => console.log('Failed to connect to database'))
+
+export default app
